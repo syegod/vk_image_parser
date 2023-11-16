@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>CSV Reader</title>
+</head>
+
+<body>
+    <div class="w-full h-full flex flex-col">
+        <div class="my-10 flex flex-row gap-5 justify-center">
+            <button id="load_btn" class="bg-sky-500 px-3 py-1.5 rounded-lg text-white outline-none shadow-lg"
+                onclick="fetch_posts()">Load files</button>
+        </div>
+        <div class="flex flex-col items-center px-10 gap-10" id="image_table">
+        </div>
+        <div class="" id="image_display">
+        </div>
+    </div>
+    <script>
+        // window.addEventListener('DOMContentLoaded', () => {
+
+            // function attachDownloadEventListeners() {
+            //     const downloadButtons = document.querySelectorAll('#download_btn');
+
+            //     downloadButtons.forEach(button => {
+            //         button.addEventListener('click', (e) => {
+            //             const fileUrl = e.target.dataset.url;
+            //             console.log(fileUrl);
+            //             // ipcRenderer.send('download-file', fileUrl);
+
+            //             // ipcRenderer.once('file-downloaded', (event, filePath) => {
+            //                 // console.log('File downloaded and saved at:', filePath);
+            //                 // You can update the UI or perform additional actions here
+            //             // });
+            //         });
+            //     });
+            // }
+            // attachDownloadEventListeners();
+        // });
+    </script>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
